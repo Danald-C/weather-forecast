@@ -119,8 +119,9 @@ app.get('*', (req, res) => { // Must come after all declared pages. If you got h
 })
 
 // This is synchronous
-app.listen(3000, () => {
-    console.log('Server is up on port 3000') // This displays not in the browser
+// app.listen(3000, () => {
+app.listen(port, () => {
+    console.log('Server is up on port ' + port) // This displays not in the browser
 }) // On the local machine Port 3000 is standard. HTTP sometimes uses Port 80
 
 // When listen starts it doesn't close (always listening) until manually closed ctrl c
