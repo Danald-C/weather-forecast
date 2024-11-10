@@ -9,6 +9,7 @@ const forecast = require('./utils/forecast')
 // console.log(__dirname) // __filename
 
 const app = express()
+const port = process.env.PORT || 3000
 
 // Used for Dynamic Page Templating
 const templatesDirPathV = path.join(__dirname, '../templates/views');
